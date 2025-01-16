@@ -1,4 +1,4 @@
-package com.gaurav.stackoverflowapp
+package com.gaurav.stackoverflowapp.screen
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
