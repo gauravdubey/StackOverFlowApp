@@ -1,4 +1,14 @@
 package com.gaurav.stackoverflowapp.question
 
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-data class FavoriteQuestion(val id:String, val question:String)
+@Entity(tableName = "favorite")
+data class FavoriteQuestion(
+    @ColumnInfo(name = "id")
+    @PrimaryKey
+    val id: String,
+    @ColumnInfo(name = "title")
+    val title: String
+)
